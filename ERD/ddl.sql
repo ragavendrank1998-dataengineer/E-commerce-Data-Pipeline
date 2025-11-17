@@ -14,8 +14,11 @@ CREATE TABLE IF NOT EXISTS per_customers (
 	customer_zip_code_prefix INTEGER,
 	customer_city TEXT,
 	customer_state TEXT,
-	file_name TEXT,
-	file_process_date DATE
+	insert_updt_flag TEXT,
+	insert_updt_ts TIMESTAMP,
+    active_flg TEXT,
+    file_name TEXT,
+    created_date DATE
 );
 
 CREATE TABLE IF NOT EXISTS geolocation (
@@ -90,3 +93,4 @@ CREATE TABLE IF NOT EXISTS products (
 	file_name TEXT,
 	file_process_date DATE
 );
+
